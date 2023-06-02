@@ -73,6 +73,6 @@ crashlytics-build.properties
 
 
 # Library
-/Library
-/Logs
-/Temp
+Library/
+Logs/
+Temp/
