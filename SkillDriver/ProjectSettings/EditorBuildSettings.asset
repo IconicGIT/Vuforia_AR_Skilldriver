@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SkillPage.unity
     guid: f1d5c3a3e9ecf4c4cbd933f0f980ff91
+  - enabled: 1
+    path: Assets/Scenes/LessonPage.unity
+    guid: 6ac77dac149616641b51588b4883a73d
   m_configObjects: {}

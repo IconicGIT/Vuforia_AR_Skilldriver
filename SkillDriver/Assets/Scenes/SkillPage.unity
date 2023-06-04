@@ -514,7 +514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 238377516}
-  skillPresets:
-  - {fileID: 717075582452710944, guid: b92030cb50d240d44a078e947da9b549, type: 3}
-  - {fileID: 6541425608537832253, guid: 3ceb7ac53dd23544392b120813d53472, type: 3}
-  - {fileID: 5960264766237299945, guid: 83898a13759939443903e80f5ca4ea79, type: 3}
+  LessonButtonsCanvas: {fileID: 0}
+  LessonButtonPreset: {fileID: 6166937919867824558, guid: 92c8a09deb188e548b4cdc15d622c6dc, type: 3}
+  nextScene: LessonPage

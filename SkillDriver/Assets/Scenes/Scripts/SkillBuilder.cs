@@ -1,51 +1,81 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class SkillBuilder : MonoBehaviour
 {
     [SerializeField]
     GameObject canvas;
-    [SerializeField]
-    List<GameObject> skillPresets;
 
-    
+    [SerializeField]
+    Transform LessonButtonsCanvas;
+
+    [SerializeField]
+    GameObject LessonButtonPreset;
+
+    [SerializeField]
+    string nextScene;
+
+    GameObject skillGO;
+
     private void Awake()
     {
-        print("curret skill: " + Global.currentSkill);
 
         for (int i = 0; i < Global.skills.Count; i++)
         {
             if (Global.currentSkill == Global.skills[i])
             {
                 SpawnSkillInCanvas(i);
-
             }
+        }
+
+        LessonButtonsCanvas = skillGO.transform.Find("LessonButtons");
+
+        LessonHolder lessonList = Global.currentSkill.gameObject.GetComponent<LessonHolder>();
+
+        for (int i = 0; i < lessonList.lessons.Count; i++)
+        {
+            GameObject button = PrefabUtility.InstantiatePrefab(LessonButtonPreset) as GameObject;
+            PrefabUtility.UnpackPrefabInstance(button, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+
+            LessonButton buttonData = button.GetComponent<LessonButton>();
+
+            buttonData.lessonId = i;
+            buttonData.nextScene = nextScene;
+
+            button.transform.SetParent(LessonButtonsCanvas);
         }
     }
 
     void SpawnSkillInCanvas(int skillIndex)
     {
 
-        if (skillIndex > skillPresets.Count)
+        if (skillIndex > Global.skills.Count)
         {
             Debug.LogError("index out of bounds");
         }
         else
         {
-            if (skillPresets[skillIndex])
+            if (Global.skills[skillIndex] != null)
             {
-                GameObject skill = Instantiate(skillPresets[skillIndex]);
+                skillGO = PrefabUtility.InstantiatePrefab(Global.skills[skillIndex]) as GameObject;
+                PrefabUtility.UnpackPrefabInstance(skillGO, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
 
-                skill.transform.parent = canvas.transform;
-                skill.transform.position = Vector3.zero;
+                skillGO.transform.parent = canvas.transform;
+                skillGO.transform.position = Vector3.zero;
             }
             else
             {
                 Debug.LogError("Missing skill at index" + skillIndex);
             }
-            
+
         }
-        
+
     }
+    public void SetLessonId(int id)
+    {
+        Global.currentLessonId = id;
+    }
+   
 }

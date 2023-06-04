@@ -5,15 +5,29 @@ using UnityEngine;
 public class Global : MonoBehaviour
 {
 
-    [SerializeField]
-    public static Skill currentSkill;
+    public static GameObject currentSkill;
 
-    [SerializeField]
-    public static List<Skill> skills;
+    public static List<GameObject> skills;
+
+    public List<GameObject> skillPresets;
+
+    public static int currentLessonId;
+
 
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+
+        skills = new List<GameObject>();
+
+        foreach (GameObject item in skillPresets)
+        {
+            skills.Add(item);
+
+        }
+
+
+
 
         if (skills.Count > 0)
         {
@@ -37,6 +51,11 @@ public class Skill : MonoBehaviour
     public string GetName()
     {
         return skillName;
+    }
+
+    public void SetName(string name)
+    {
+        skillName = name;
     }
 }
 
