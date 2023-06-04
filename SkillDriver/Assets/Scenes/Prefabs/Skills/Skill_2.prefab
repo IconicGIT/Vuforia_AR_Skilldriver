@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2610414804024719583}
   - component: {fileID: 8337515986017970812}
   m_Layer: 0
-  m_Name: Skill_1
+  m_Name: Skill_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,10 +47,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lessons:
-  - {fileID: 2623539826322310952, guid: ab025434f98458740b591288723d67ba, type: 3}
-  - {fileID: 2623539826322310952, guid: 35a23dba95a3a534d8c043ee2a059156, type: 3}
-  - {fileID: 2623539826322310952, guid: bb2c6d84bbddb464a83682ef4d18e4fe, type: 3}
-  - {fileID: 2623539826322310952, guid: 7ea03e1e35d371042bf5768b036dd32e, type: 3}
+  - {fileID: 2623539826322310952, guid: 9f420c25fd8d97348b054cafd497ad2d, type: 3}
+  - {fileID: 2623539826322310952, guid: d206de63196c3834ca185b607a5d759e, type: 3}
+  - {fileID: 2623539826322310952, guid: 3eefe47d6e550be41be9410535f07e15, type: 3}
+  - {fileID: 2623539826322310952, guid: a0d0331cea75e524daeffedc37a674e5, type: 3}
 --- !u!1 &5211086820283291615
 GameObject:
   m_ObjectHideFlags: 0

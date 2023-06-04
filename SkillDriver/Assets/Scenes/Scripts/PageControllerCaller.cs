@@ -9,11 +9,16 @@ public class PageControllerCaller : MonoBehaviour
         PageController.GoTo(sceneName);
     }
 
-    public void SetCurrentSkill(int skillNumber)
+    public void SetCurrentSkill(GameObject skill)
     {
-        if (skillNumber > 0 && skillNumber < Global.skills.Count)
-            Global.currentSkill = Global.skills[skillNumber];
-        
-
+        foreach (GameObject item in Global.skills)
+        {
+            print("item: " + item.name + " skill: " + skill.name);
+            if (item.name.CompareTo(skill.name) == 0)
+            {
+                Global.currentSkill = item;
+                print("current skill: " + Global.currentSkill.name);
+            }
+        }
     }
 }

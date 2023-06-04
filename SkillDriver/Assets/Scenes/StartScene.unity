@@ -1040,6 +1040,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillPresets:
   - {fileID: 3222276981944183403, guid: b92030cb50d240d44a078e947da9b549, type: 3}
+  - {fileID: 3222276981944183403, guid: 2b6e44dcf85eeaa40af0feb41b70732e, type: 3}
+  - {fileID: 3222276981944183403, guid: f59623dc2254cce42bc11f1e2ce7993f, type: 3}
 --- !u!4 &1145074198
 Transform:
   m_ObjectHideFlags: 0

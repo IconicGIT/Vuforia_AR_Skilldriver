@@ -357,10 +357,10 @@ MonoBehaviour:
       - m_Target: {fileID: 978228476}
         m_TargetAssemblyTypeName: PageControllerCaller, Assembly-CSharp
         m_MethodName: SetCurrentSkill
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 3222276981944183403, guid: f59623dc2254cce42bc11f1e2ce7993f, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1123,10 +1123,10 @@ MonoBehaviour:
       - m_Target: {fileID: 978228476}
         m_TargetAssemblyTypeName: PageControllerCaller, Assembly-CSharp
         m_MethodName: SetCurrentSkill
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 3222276981944183403, guid: 2b6e44dcf85eeaa40af0feb41b70732e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1313,10 +1313,10 @@ MonoBehaviour:
       - m_Target: {fileID: 978228476}
         m_TargetAssemblyTypeName: PageControllerCaller, Assembly-CSharp
         m_MethodName: SetCurrentSkill
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 3222276981944183403, guid: b92030cb50d240d44a078e947da9b549, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

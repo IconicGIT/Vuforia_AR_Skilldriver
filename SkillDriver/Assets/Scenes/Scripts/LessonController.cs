@@ -16,16 +16,15 @@ public class LessonController : MonoBehaviour
             if (i == Global.currentLessonId)
             {
 
-                print("do");
                 lessonGo = Instantiate(lessonList.lessons[Global.currentLessonId]);
 
                 lessonGo.transform.parent = canvas.transform;
+                lessonGo.GetComponent<RectTransform>().localPosition = Vector3.zero;
             }
         }
     }
 
     private void Start()
     {
-        lessonGo.transform.position = Vector3.zero;
     }
 }
