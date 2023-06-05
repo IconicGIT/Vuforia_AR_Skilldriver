@@ -13,11 +13,10 @@ public class PageControllerCaller : MonoBehaviour
     {
         foreach (GameObject item in Global.skills)
         {
-            print("item: " + item.name + " skill: " + skill.name);
             if (item.name.CompareTo(skill.name) == 0)
             {
                 Global.currentSkill = item;
-                print("current skill: " + Global.currentSkill.name);
+                //print("current skill: " + Global.currentSkill.name);
             }
         }
     }

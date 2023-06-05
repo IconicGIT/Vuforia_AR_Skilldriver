@@ -16,6 +16,13 @@ public class Global : MonoBehaviour
 
     private void Awake()
     {
+        GameObject copy = GameObject.Find("Global");
+        if (copy != gameObject && copy != null)
+        {
+            //print("found Global");
+            Destroy(gameObject);
+        }
+
         DontDestroyOnLoad(this.gameObject);
 
         skills = new List<GameObject>();

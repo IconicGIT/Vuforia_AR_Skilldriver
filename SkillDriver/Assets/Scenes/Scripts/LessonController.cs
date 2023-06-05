@@ -22,6 +22,9 @@ public class LessonController : MonoBehaviour
                 lessonGo.GetComponent<RectTransform>().localPosition = Vector3.zero;
             }
         }
+
+
+
     }
 
     private void Start()

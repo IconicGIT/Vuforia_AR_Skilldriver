@@ -27,6 +27,7 @@ public class SkillBuilder : MonoBehaviour
             if (Global.currentSkill == Global.skills[i])
             {
                 SpawnSkillInCanvas(i);
+                //print("spawning skill: " + Global.skills[i].name + " index: " + i);
             }
         }
 
@@ -61,6 +62,7 @@ public class SkillBuilder : MonoBehaviour
             {
                 skillGO = PrefabUtility.InstantiatePrefab(Global.skills[skillIndex]) as GameObject;
                 PrefabUtility.UnpackPrefabInstance(skillGO, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+                //print("spawning skill 1: " + Global.skills[skillIndex].name + " index: " + skillIndex);
 
                 skillGO.transform.parent = canvas.transform;
                 skillGO.transform.position = Vector3.zero;
