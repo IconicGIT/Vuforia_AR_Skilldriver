@@ -7,6 +7,9 @@ public class LessonController : MonoBehaviour
     [SerializeField]
     GameObject canvas;
 
+    [SerializeField]
+    GameObject ARbutton;
+
     GameObject lessonGo;
     private void Awake()
     {
@@ -23,11 +26,9 @@ public class LessonController : MonoBehaviour
             }
         }
 
-
+        GameObject arButton = Instantiate(ARbutton);
+        ARbutton.transform.position.Set(88, 127, 0);
 
     }
 
-    private void Start()
-    {
-    }
 }

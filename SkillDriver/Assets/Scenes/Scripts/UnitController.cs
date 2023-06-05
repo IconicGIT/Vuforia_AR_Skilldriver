@@ -22,7 +22,8 @@ public class UnitController : MonoBehaviour
     {
         if (units.Count > 0)
         {
-            currentUnit = units[0];
+            if (Global.currentUnitId > units.Count - 1) Global.currentUnitId = units.Count - 1;
+            currentUnit = units[Global.currentUnitId];
         }
         UpdatePage();
 

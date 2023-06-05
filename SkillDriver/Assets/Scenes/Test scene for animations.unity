@@ -464,6 +464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StopSituation
       objectReference: {fileID: 0}
+    - target: {fileID: 1921527232332078876, guid: b4813226384c18c4a97e15430a0423e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1921527232332078877, guid: b4813226384c18c4a97e15430a0423e4, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -520,6 +524,10 @@ PrefabInstance:
     - target: {fileID: 2703740565618249784, guid: 8c7628d8afc0bb64e9c1cd2ee89e69dc, type: 3}
       propertyPath: m_Name
       value: AccidentSituation
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703740565618249784, guid: 8c7628d8afc0bb64e9c1cd2ee89e69dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2703740565618249785, guid: 8c7628d8afc0bb64e9c1cd2ee89e69dc, type: 3}
       propertyPath: m_RootOrder
@@ -621,6 +629,10 @@ PrefabInstance:
     - target: {fileID: 3966023162205778159, guid: c7dc7d27944b583458efde9e27e8340b, type: 3}
       propertyPath: m_Name
       value: ForcedDirectionSituation
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966023162205778159, guid: c7dc7d27944b583458efde9e27e8340b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7dc7d27944b583458efde9e27e8340b, type: 3}

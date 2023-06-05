@@ -12,6 +12,9 @@ public class Global : MonoBehaviour
     public List<GameObject> skillPresets;
 
     public static int currentLessonId;
+    public static int currentUnitId;
+
+    public static GameObject currentAR_Model;
 
 
     private void Awake()

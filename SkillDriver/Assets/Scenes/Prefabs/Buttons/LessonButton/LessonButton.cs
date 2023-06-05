@@ -36,6 +36,7 @@ public class LessonButton : MonoBehaviour
     private void GoToLesson(int index)
     {
         Global.currentLessonId = index;
+        Global.currentUnitId = 0;
         SceneManager.LoadScene(nextScene);
     }
 }
