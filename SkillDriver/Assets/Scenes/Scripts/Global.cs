@@ -46,7 +46,10 @@ public class Global : MonoBehaviour
     }
 
     
-
+    public void SetARModel(GameObject model)
+    {
+        currentAR_Model = model;
+    }
 
 
 
