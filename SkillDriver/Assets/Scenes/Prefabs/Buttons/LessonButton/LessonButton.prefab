@@ -164,8 +164,8 @@ RectTransform:
   m_GameObject: {fileID: 6166937919867824558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5745969102864469872}
   m_Father: {fileID: 0}
@@ -189,8 +189,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lessonId: 0
-  nextScene:
-    m_Handle: 0
+  nextScene: 
+  lessonGO: {fileID: 0}
+  lessonData: {fileID: 0}
 --- !u!222 &3635287744875915841
 CanvasRenderer:
   m_ObjectHideFlags: 0

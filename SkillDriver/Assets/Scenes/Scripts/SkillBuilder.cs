@@ -37,8 +37,7 @@ public class SkillBuilder : MonoBehaviour
 
         for (int i = 0; i < lessonList.lessons.Count; i++)
         {
-            GameObject button = PrefabUtility.InstantiatePrefab(LessonButtonPreset) as GameObject;
-            PrefabUtility.UnpackPrefabInstance(button, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+            GameObject button = Instantiate(LessonButtonPreset);
 
             LessonButton buttonData = button.GetComponent<LessonButton>();
 
@@ -60,8 +59,7 @@ public class SkillBuilder : MonoBehaviour
         {
             if (Global.skills[skillIndex] != null)
             {
-                skillGO = PrefabUtility.InstantiatePrefab(Global.skills[skillIndex]) as GameObject;
-                PrefabUtility.UnpackPrefabInstance(skillGO, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+                skillGO = Instantiate(Global.skills[skillIndex]);
                 //print("spawning skill 1: " + Global.skills[skillIndex].name + " index: " + skillIndex);
 
                 skillGO.transform.parent = canvas.transform;
